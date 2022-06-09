@@ -1,7 +1,7 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = hola;
+const nuevaString = "hola";
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 11;
@@ -103,14 +103,14 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  return (x / y);
+  return (x % y);
 }
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num / 2 === 0){
+  if (num % 2 === 0){
     return true;
   } else{
     return false;
@@ -121,7 +121,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if ( num / 2 === 1){
+  if ( num % 2 === 1){
     return true;
   } else {
     return false;
@@ -183,14 +183,14 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  return "str" + "!";
+  return str + "!";
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  var combinados = ("nombre" + " " + "apellido");
+  var combinados = (nombre + " " + apellido);
   return combinados;
 }
 
@@ -198,7 +198,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return ("hola" + "nombre" + "!");
+  return ("hola" + nombre + "!");
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
