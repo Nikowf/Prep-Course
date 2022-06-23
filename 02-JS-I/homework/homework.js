@@ -173,9 +173,9 @@ function esPositivo(num) {
   if(num === 0 ){
     return false
   } else if (nun>0){
-    return "es positivo"
+    return "Es positivo"
   } else { 
-    return "es negativo"
+    return "Es negativo"
   }
 }
 
