@@ -114,16 +114,12 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  if (numero % 3 === 0 && numero & 5 === 0){
-    return "fizz";
-  } else if (numero % 3 === 0){
-    return "buzz";
-  } else if (numero % 5 === 0){
-    return "fizzbuzz";
-  } else {
-    return (numero);
-  }
+  if(numero % 15 === 0) return 'fizzbuzz';
+  if(numero % 3 === 0) return 'fizz';
+  if(numero % 5 === 0) return 'buzz';
+  return numero;
 }
+
 
 function operadoresLogicos(num1, num2, num3) {
   //La función recibe tres números distintos. 
@@ -170,9 +166,9 @@ function esVerdadero(valor){
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
 if (valor === true){
-  return "soy verdadero";
+  return "Soy verdadero";
 } else if (valor === false){
-  return "soy falso";
+  return "Soy falso";
 }
 }
 
@@ -183,17 +179,16 @@ function tablaDelSeis(){
   let arraytablaDelSeis = [];
   for (let i = 0; i <= 10; i++){
     arraytablaDelSeis.push (6 * i);
-  } return tablaDelSeis
+  } return arraytablaDelSeis
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if(tieneTresDigitos.length === 3){
-    return true;
-  } else{
-    return false;
+  if(numero > 99 && numero < 1000){
+    return true
   }
+  return false
 }
 
 function doWhile(numero) {
