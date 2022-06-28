@@ -172,7 +172,7 @@ function esPositivo(num) {
   //Si el número es 0, devuelve false
   if(num === 0 ){
     return false
-  } else if (nun  >0){
+  } else if (num > 0){
     return "Es positivo"
   } else { 
     return "Es negativo"
