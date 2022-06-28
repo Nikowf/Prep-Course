@@ -10,7 +10,7 @@ function devolverPrimerElemento(array) {
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-  return array[array.length - 1];
+  return array(array.length - 1);
 }
 
 
@@ -26,13 +26,12 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  var nuevoArray = [];
-  for(var i = 0; i < array.length; i++) {
-    nuevoArray[i] = array[i] + 1;
+  var nuevoarray = [];
+  for(var i = 0; i < array.length; i++);
+  nuevoarray[i]= array[i] + 1;
+  {
+    return nuevoarray
   }
-
-  return nuevoArray;
-
 }
 
 
@@ -65,7 +64,8 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  return palabras.join(" ");
+  palabras.join(" ");
+   return dePalabrasAFrase;
 }
 
 
@@ -98,7 +98,11 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
-  return agregarNumeros(resultadosTest) / resultadosTest.length;
+  var agregarNumeros = 0;
+  for (var i = 0; i < resultadosTest.length; i++) {
+    agregarNumeros += resultadosTest[i];
+  }
+  return agregarNumeros / resultadosTest;
 }
 
 
@@ -143,7 +147,7 @@ for(var i = 0; i < arreglo.length; i++){
     contador++
   }
  } 
- return contador;
+ return arreglo;
 }
 
 
@@ -165,7 +169,7 @@ function empiezaConNueve(n) {
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
   let num = n.toString()
-  if (num.charAt (0) === "9"){
+  if (num.charat (o) === "9"){
     return true;
   } 
   return false;
@@ -190,18 +194,17 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-  var nuevoArray = [];
-  for(let i= 0; i<array.length; i++) {
-    if(array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre") {
-      nuevoArray.push(array[i]);
-    }
+let nuevoarray = [];
+for (var i = 0; i < array.length; i++){
+  if (array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre"){
+    return nuevoarray.push(array[i]);
   }
-  if(nuevoArray.length < 3) {
-    return "No se encontraron los meses pedidos";
-  }
-  else {
-      return nuevoArray;
-  }
+}
+if (nuevoarray.length < 3){
+  return "No se encontraron los meses pedidos";
+} else {
+  return nuevoarray;
+}
 }
 
 
