@@ -10,7 +10,7 @@ function devolverPrimerElemento(array) {
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-  return array(array.length - 1);
+  return array[array.length - 1];
 }
 
 
@@ -26,12 +26,13 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  var nuevoarray = [];
-  for(var i = 0; i < array.length; i++);
-  nuevoarray[i]= array[i] + 1;
-  {
-    return nuevoarray
+  var nuevoArray = [];
+  for(var i = 0; i < array.length; i++) {
+    nuevoArray[i] = array[i] + 1;
   }
+
+  return nuevoArray;
+
 }
 
 
@@ -64,10 +65,8 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  palabras.join(" ");
-   return dePalabrasAFrase;
+  return palabras.join(' ');
 }
-
 
 function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
@@ -98,13 +97,8 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
-  var agregarNumeros = 0;
-  for (var i = 0; i < resultadosTest.length; i++) {
-    agregarNumeros += resultadosTest[i];
-  }
-  return agregarNumeros / resultadosTest;
+  return agregarNumeros(resultadosTest) / resultadosTest.length;
 }
-
 
 function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
@@ -147,7 +141,7 @@ for(var i = 0; i < arreglo.length; i++){
     contador++
   }
  } 
- return arreglo;
+ return contador;
 }
 
 
@@ -169,7 +163,7 @@ function empiezaConNueve(n) {
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
   let num = n.toString()
-  if (num.charat (o) === "9"){
+  if (num.charAt(0) === "9"){
     return true;
   } 
   return false;
@@ -197,7 +191,7 @@ function mesesDelAño(array) {
 let nuevoarray = [];
 for (var i = 0; i < array.length; i++){
   if (array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre"){
-    return nuevoarray.push(array[i]);
+        nuevoarray.push(array[i]);
   }
 }
 if (nuevoarray.length < 3){
